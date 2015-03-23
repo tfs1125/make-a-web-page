@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Tim Steppe</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!DOCTYPE HTML>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Intro to Programming Notes</title>
+	<link rel="stylesheet" href="css/style_stage_1.css">
+  </head>
+
+<body>
+<div class="container">
+ <div class="TOC">
+  	 <h1 class="big_title">Table of Contents</h1>	
+		<ol class="roman">
+		   <li><a href="#lesson_1">Lesson 1: Basics of the Web and HTML</a>
+				<ol class="alphabet">
+					<li>Technological Empathy and Stoopid Computers</li>
+					<li> Basics of the Internet</li>
+					<li>Basics of HTML			
+    			 		<ol class="sub-topics">
+    						<li id="html_2">What is HTML?</li>
+    						<li id="tags">HTML Tags</li>
+    						<li id="blocks">Inline vs Block</li>
+    						<li id="attibutes">Attributes</li>
+    					</ol>
+    				</li>		
+    			</ol>
+    		</li>		
+
+		    <li><a href="#lesson_2">Lesson 2: Basics of Creating Structure</a>
+				<ol class="alphabet">
+					<li>Structure of a Web Page</li>
+					<li>Document Object Model</li>
+					<li>Tools for the Front-end Developer</li>								
+				 </ol>	
+			</li>
+			<li><a href="#lesson_3">Lesson 3: Basics of the Web and HTML</a>
+				  <ol class="alphabet">
+					  <li>What is CSS?</li>
+					  <li>How May CSS Be Applied to an HTML Document</li>
+					  <li>More Detail About Boxes</li>
+				  </ol>
+			</li>	  
+		</ol>
+  </div>
+
+	  <!--This is the Title-->
+  	<h1 class="big_title">Important Concepts</h1>
+	  <!-- The Organization of the document, for now will be Lesson, e.g. Lesson 1, Lesson 2 etc and then
+	  in each Lesson will be subsection for each of the important concepts.-->
+	 <div class="lesson" id="lesson_1">
+		  <h2 > Lesson 1: Basics of the Web &#38; Programming</h2>
+	 	  	 <div class="topic">  
+			   <h3>Technological Empathy &#38; Stoopid Computers</h3>
+	  		   	  <p>Technological Empathy is having an understanding for how a specific or suite of related technologies 
+                    <em>work &#38; function</em>.It could be in the form of mechanical empathy that allows you to successfully 
+                    rebuild a 1953 CHEVY (definitely not me); or, an empathy around the internet or computers (of which I possess slightly 
+                    more, but not much) that allows you to understand and leverage your understanding to make a computer perform the tasks 
+                    you wish.  Part of technological empathy around computers is understanding that they are stoopid.&#32;&#32; However, I
+                    tend to think that they are more 'imaginationally challenged', then stupid.  So, a computer, unlike my youngest daughter, 
+                    will do exactly what you tell it to do and in the proscribed time, manner, and method.  Sort of like my oldest daugther when 
+                    she wants to push my buttons. For example, I am <b><em>really</em> liking this class and want to really emphasize 'really'.  
+                    However, if I end the italics, but forget to te</b>ll it to stop bolding the text (Oops!), it will keep on doing what I told 
+                    it do or not do what I didn't tell it.</p>
+ 			  </div>
+              <div class="topic" id="internet">
+                   <h3>The Internet</h3>
+                      <p>To me, the internet comprises both the information/data that is  primarily contained, referenced, and linked through HTML docs
+					   and the channels through which we access the information, i.e. what connects our commputers, devices, household appliances, etc. 
+					    However, one day, I do hope to be able to better grasp the 'cloud'.</p>
+			  </div>
+			  <div class="topic" id="HTML">
+                <h3>HTML</h3>
+                    <p><b class="subhead">HTML:</b><br>
+					Hypertext Markup Language is the backbone of the content on the web.  When you view a 'web' page through your 
+                    browser, the browser is rendering the HTML in a manner that is visually accommodating to people, and hopefully, in an attractive and 
+                    organized manner.  The hypertext is the content and the 'markup' tells the browser how to organize and display the information.
+					</p>
+
+			  <p><b class="subhead">HTML Tags:</b><br>
+                &#60;tags&#62; comprise the basic grammar and syntax of HTML.  There are opening &#60;tags&#62; and closing &#60;/tags&#62; that will act 
+				to organize and display content in specific manners; and, everything between the opening and closing tag is called an <b>element</b>.  Most, but not all, &#60;tags&#62; will have a closing tag.  A few tags such as &#60;br&#62; or &#60;img&#62;do not have closing tags, and are called 'void' tags.<br>
+                <br>
+				<b class="subhead">Innline vs Block Tags:</b>
+				<br>Another distinction between tags is whether or not they are considered to 'inline' or 'block' tags.  Inline and block tags 
+				organize the white space within a document in different ways.  A block tag imparts a dimensionality to the element that is 
+				interpreted as a box or block, whereas an inline, according to the 
+				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente" style="text-decoration: none;">Mozilla 
+				Development Network</a>: "An inline element occupies only the space bounded by the tags that define the inline element." 
+				Examples of inline tag is the &#60;br&#62;<br> that wraps the text. And the &#60;span&#62; tag <span class="dif_text">that 
+				may be used to alternatively style a block of text.</span>
+                <br><br>An example of a block tag is the &#60;p&#62; or paragraph tag.
+
+				<br><br><b class="subhead">Attributes:</b><a href="http://techland.time.com/2012/08/03/trs-80/">
+				<img class="trs_80" src="http://upload.wikimedia.org/wikipedia/commons/8/83/TRS-80_Model_III.jpg" alt="TRS 80 Computer"></a>
+                <br> Elements may have attributes; and, attributes will have 'values' that may modify the element.  
+				Some elements are required to have attributes like &#60;img&#62; and &#60;a&#62;. So, in order to show the image 
+				of, and provide a link to a tribute article to the very first computer I ever used (the TRS-80), I would need to use the attributes of 'href' to provide the link and 'src' to provide the path to the image.	(Image: Wiki Commons).
+				<br><br>Back when Radio Shack used to be cool...
+          </p>
+				</div>
+		</div>
+		<div class="lesson" id="lesson_2">
+		  <h2 > Lesson 2: Basics of the HTML Structure</h2>
+	 	  	 <div class="topic" id="structure">  
+			   <h3>Structure of a Web Page</h3>
+	  		   	  <p>A web page is put together, in general, with <b>HTML</b>, which provides the structure and foundation of the the page;
+				  <b>CSS</b>, which provides the style; and <b>JavaScript</b>, which will 'fancify' your web page by allowing
+				  certin functionallity. A useful way to understand a web page's coding and organization is to 'boxify' the layout by visualizing or
+				  drawing boxes around the major content compononents.  Each box will represent a different section and that leads us to using the 'div'
+				  tag, which is the basic tag used to define the boxes/structure in a page.
+ 			  </div>
+              <div class="topic" id="DOM">
+                   <h3>Document Object Model (DOM)</h3>
+                      <p>The 'DOM' ( da DOM DOM) represents the structure of the html and has a tree like structure tht shows the hierarchal relations
+					  of the elements within a page.  The DOM can either be built manually or you can be smart and view it in developer tools. The DOM 
+					  shows the relationship of the structural components and how
+					  different components or elements are nested within the boxes; and also how different boxes or 'divs' are nested within other boxes.
+					  </p>
+			  </div>
+			  <div class="topic" id="tools">
+                <h3>Tools for the Front-end Developer</h3>
+                    <p>Two tools are <b>HTML Editors</b> and the <b>Developer Tools</b> within a browser. HTML editors are specically designed
+					to help write copy and will have features that will help minimize the repetivie nature of having to type the same thing over and
+					over again.  For example, I generally use the CoffeCup Editor.  The other really useful tool is the 'Developer Tools' feature within
+					the browser.  The developer tools not only allow you to see the html, but alsow to view the style, the box dimensions, and very importantly,
+					allow you to alter tags and elements to see what the result would be.  The developer tool also provides you with the DOM. Other useful
+					tools include <b>HTML</b> and <b>CSS</b> code validators.  These are awesome in that they will allow you more easily trouble-shoot any mistakes
+					that you have made in your code.
+					</p>
+				</div>		
+		</div>
+ <div class="lesson" id="lesson_3">
+		  <h2 > Lesson 3: Basics of Style and CSS</h2>
+	 	  	 <div class="topic">  
+			   <h3>What is CSS?</h3>
+	  		   	  <p><b>CSS</b> is short for Cascading Style Sheets.  CSS allows you to impart style or 'purtify' your web page. 'Cascading'
+				  means that CSS rules follow rules of inheritance in that descendant elements will inherit the style properties of the ancestors
+				  unles established otherwise. Within CSS, the most specific rule is applied across the document.  For example, if I say that all'p'
+				  elements will have a blue font color, all 'p' elements will have a blue font-color, unless I more specfically provide a class or id
+				  value to a 'p' element and have set it up for that class or id to produce a red font.
+				  </p>
+ 			  </div>
+              <div class="topic" id="css_applied">
+                   <h3>How May CSS Be Applied</h3>
+                      <p>CSS may be applied in one of three ways:</p>
+					  	 <ol class="normal">
+						 	 <li> Inline to an element although, this should be avoided at all costs it requires repeqting code.  With the notable except of writing
+							 HTML emails.  This is a whole 'nother class, though...</li>
+							 <li> Within the HTML document 'head' section within 'style' tags.  Again, avoid this for web-pages as you want 
+							 to <b>SEPARATE YOUR CONCERNS</b></li>
+							 <li>Within a linked style sheet.  The recommended and web-page approved manner.</li>
+						</ol>
+						 <p> One of the biggest advantages of using CSS is that it allows you avoid having to repeat the same instructions
+						  for like elements.
+			  </div>
+			  <div class="topic" id="box_model">
+                <h3>Box Model</h3>
+                    <p>When understanding style for web-pages, it is important to grasp the concept of the 'Box Model'.
+					The Box Model simply delineates the dimensions and components of a box. </p>
+					<p>The dimensions of a box are determined by the:</p>
+					<ol class="normal">
+						<li> The margin which defines the 'whitespace' outside of a box.  Although the margin is not used in the
+						calculation.</li>
+						<li>The border or the edge around the box.</li>
+						<li>The padding within the box, or the 'buffer' space around the conent within a box.</li>
+						<li>The content width and height within the box.</li>
+					</ol>
+					<p>Now this can be all very confusing when trying to figure and determine boxes.  So there a couple of things
+					that you can do to make your life easier when formatting the boxes:</p>
+					<ol class="normal">
+						<li> Set sizes of the box in terms of percentages, e.g. 70%.</li>
+						<li> Set box-sizing attribute to border-box across all the elements </li>
+					</ol>
+					<p>A key skill would need to be learning how to position your boxes.  For example, lets say
+					I  wanted to have two boxes in my document.  By default, Box 1 would stack on top of Box 2</p>
+					   <div>
+					     <div class="box_1">
+					   	 <p>Box 1</p>
+						 </div>
+						 <div class="box_2">
+						 <p> BOX 2</p>
+						 </div>
+						</div>
+
+						<p>However, if I want them to be side-by-by side, I would need to use an atrribut and value (display: flex)
+						that would allow the boxes to position themselves side by side.
+						<div class="side">
+						<div class="box_1">
+					   	 <p>Box 1</p>
+						 </div>
+						 <div class="box_2">
+						 <p> BOX 2</p>
+						 </div>
+					</div>
+				</div>
+		</div>
+	</div>	
+</body>
+
+</body>
+
+</html>
